@@ -1,0 +1,107 @@
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--light-gray);
+}
+
+.brand {
+  margin-left: 5vw;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  width: 30%;
+  height: 10vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links > li {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.nav-links > li > .nav-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-links > li > .nav-link > .orange-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  min-width: 110px;
+  background: var(--orange);
+  border-radius: 10px;
+  color: white;
+}
+
+.nav-links > li > .nav-link > .violet-button {
+  background: var(--violet);
+  display: block;
+  text-align: center;
+  padding: 10px;
+  min-width: 110px;
+  border-radius: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    z-index: 2;
+    background: var(--light-gray);
+    position: relative;
+    height: 10vh;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    z-index: 3;
+  }
+  .nav-links {
+    top: 0;
+    z-index: 2;
+    background: white;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: circle(100px at 100% -20%);
+            clip-path: circle(100px at 100% -20%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    -webkit-clip-path: circle(1500px at 100% -10%);
+            clip-path: circle(1500px at 100% -10%);
+    pointer-events: all;
+  }
+  .line {
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+    background: var(--dark-gray);
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

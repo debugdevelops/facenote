@@ -1,0 +1,39 @@
+.root {
+  min-height: 100vh;
+  padding: 30px;
+  background: var(--light-gray);
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.doctors {
+  padding: 20px;
+}
+
+.button {
+  padding: 5px 40px 5px 40px;
+}
+
+.doctor-card {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=Search.css.map */

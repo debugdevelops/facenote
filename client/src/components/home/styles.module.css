@@ -1,0 +1,140 @@
+.section {
+  min-height: 60vh;
+  width: 100%;
+  background: var(--light-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap-reverse;
+          flex-flow: row wrap-reverse;
+  padding: 0 5vw 10vh 5vw;
+}
+
+.section > .main-text {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 400px;
+          flex: 3 1 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.section > .main-text > h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.section > .main-text > h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: var(--dark-gray);
+}
+
+.section > .main-text > .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section > .main-text > .button-container > * {
+  margin-right: 40px;
+}
+
+.section > .band-image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 200px;
+          flex: 2 1 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section > .band-image > img {
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.waves {
+  height: 30vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--light-gray);
+}
+
+.waves > .orange-wave, .waves .violet-wave {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.waves > .orange-wave {
+  -webkit-animation: wave 15s linear 0s infinite;
+          animation: wave 15s linear 0s infinite;
+}
+
+.waves > .violet-wave {
+  -webkit-animation: wave 10s linear 0s infinite;
+          animation: wave 10s linear 0s infinite;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section > .main-text {
+    text-align: center;
+  }
+  .section > .main-text > h1 {
+    margin-bottom: 20px;
+    font-size: 1.7em;
+  }
+  .section > .main-text > h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--dark-gray);
+  }
+  .section > .main-text > .button-container {
+    margin: 0 auto;
+  }
+  .section > .main-text > .button-container > * {
+    margin: 20px;
+  }
+  .section .band-image > img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=styles.module.css.map */

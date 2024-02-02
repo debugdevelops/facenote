@@ -1,0 +1,48 @@
+.card
+  position: relative
+  min-height: 400px !important
+  min-width: 350px !important
+  max-width: 400px !important
+  display: flex
+  align-items: center
+  flex-direction: column
+  text-align: center
+  justify-content: space-evenly
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    width: 100%
+    background-color: #f1f1f1
+    height: 70px
+
+.button, .search-button
+  margin: 10px !important
+  min-width: 100px !important
+  color: white !important
+  font-size: 0.8em !important
+  background: var(--orange) !important
+
+.search-button
+  background: var(--violet) !important
+
+.gray-bg
+  top: 0
+  width: 100%
+  height: 50px
+  background-color: #f1f1f1
+
+.avatar
+  height: 100px
+  width: 100px
+  overflow: hidden
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+
+.modal
+  display: flex
+  align-items: center
+  justify-content: center

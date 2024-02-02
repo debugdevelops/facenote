@@ -1,0 +1,23 @@
+:root {
+  --light-gray: #e9e9e9;
+  --dark-gray: #5a5555;
+  --orange: #fb5a00;
+  --violet: #5926ea;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: primary;
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  font-family: primary !important;
+  background: var(--light-gray);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

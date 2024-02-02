@@ -1,0 +1,8 @@
+.root {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: var(--light-gray);
+  min-height: 90vh;
+}
+/*# sourceMappingURL=styles.module.css.map */

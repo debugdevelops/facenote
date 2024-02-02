@@ -1,0 +1,72 @@
+.section
+  min-height: 60vh
+  width: 100%
+  background: var(--light-gray)
+  display: flex
+  flex-flow: row wrap-reverse
+  padding: 0 5vw 10vh 5vw
+  & > .main-text
+    flex: 3 1 400px
+    display: flex
+    justify-content: center
+    flex-flow: column wrap
+    & > h1
+      margin-bottom: 20px
+      font-size: 2.5em
+    & > h2
+      margin-bottom: 20px
+      font-size: 1.5em
+      color: var(--dark-gray)
+    & > .button-container
+      display: flex
+      & > *
+        margin-right: 40px
+
+  & > .band-image
+    flex: 2 1 200px
+    display: flex
+    align-items: center
+    & > img
+      width: 100%
+      transform: rotateY(180deg)
+
+.waves
+  height: 30vh
+  position: relative
+  overflow-x: hidden
+  background: var(--light-gray)
+  & > .orange-wave, .violet-wave
+    height: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+  & > .orange-wave
+    animation: wave 15s linear 0s infinite
+  & > .violet-wave
+    animation: wave 10s linear 0s infinite
+
+@keyframes wave
+  0%
+    transform: translateX(0%)
+  100%
+    transform: translateX(-50%)
+
+@media screen and ( max-width: 768px )
+  .section
+    & > .main-text
+      text-align: center
+      & > h1
+        margin-bottom: 20px
+        font-size: 1.7em
+      & > h2
+        margin-bottom: 20px
+        font-size: 1.2em
+        color: var(--dark-gray)
+      & > .button-container
+        margin: 0 auto
+        & > *
+          margin: 20px
+    .band-image
+      & > img
+        max-width: 300px
+        margin: 0 auto
